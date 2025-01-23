@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+           background-color: #fefefe;
+           height:80px;
+           position:sticky;
+           top: 10px;
+           border-radius: 5px;
+        }
+        .browsing div{
+            font-weight: bold;
+        }
+        .browsing{
+            display: flex;
+            gap: 2em;
+            align-items: center;
+            margin-left: 50px;
+        }
+        select{
+            border: none;
+        }
+        .demo-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2em;
+            margin-right: 50px;
+        }
+        .request-btn{
+            padding: 15px 25px;
+            color: purple;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid purple;
+            cursor: pointer;
+
+        }
+        .request-btn:hover{
+            border: 2px solid purple;
+        }
+        .start-btn{
+            padding:15px 25px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px solid purple;
+            cursor: pointer;
+            background-color: purple;
+            color: white;
+        }
+        .customer-service{
+          display:flex;
+          flex-direction: column;
+         align-items: center;
+         padding: 20px;
+        }
+        .customer-service h1 {
+            font-size: 50px;
+        }
+        .btn{
+            display: flex;
+            gap: 1em;
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
+        .startbt{
+            padding: 20px 45px;
+            border-radius: 5px;
+            border: 1px solid purple;
+            background-color: purple;
+            color: #fefefe;
+            font-weight: bold;
+        }
+        .subscription{
+            padding:20px 45px;
+            border-radius: 5px;
+            border: 1px solid purple;
+            font-weight:bold;
+            color: purple;
+        }
+        main div p{
+            font-size: 20px;
+        }
+        .logos{
+            display:flex;
+            justify-content: center;
+         gap: 5em;
+         align-items: center;
+         padding: 20px;
+        }
+        .vid-section{
+            display: flex;
+            justify-content: center;
+        }
+        .video{
+            border-radius: 10px;
+            padding-bottom: 20px;
+        }
+        .custom{
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            /* background-color: blue; */
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+                <div class="browsing">
+                <div class=" logo"><img src="./logo.png" alt="img"></div>
+                <div><label for="feature">Features</label>
+                    <select name="feature" id="feat-select"> <option value="feat-select"></option></select>
+                </div>
+                <div>
+                    <label for="solution">Solutions</label>
+                    <select name="solution" id="soln"></select>
+                </div>
+                <div>
+                    <label for="enterprise">Enterprise</label>
+                </div>
+                <div>
+                    <label for="resourse">Resources</label>
+                    <select name="res" id="resource"></select>
+                </div>
+                <div>Pricing</div></div>
+                <div class="demo-section">
+                <div>Sign in</div>
+                <div><button class="request-btn">REQUEST A DEMO</button></div>
+                <div><button class="start-btn">GET STARTED</button></div>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="customer-service">
+            <div>
+                <video src="./workframe.mp4" height="auto" width="1000px" controls autoplay loop></video>
+            </div>
+            <div class="btn">
+                <button class="startbt">GET STARTED</button>
+                <button class="subscription">FIND YOUR SUBSCRIPTION-></button>
+            </div>
+            <div>
+                <p><b>Slack if free to try</b> as long as you like</p>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div><img src="./airbnb.png" alt="bnblogo"></div>
+            <div><img src="./nasa.png" alt="nasalogo"></div>
+            <div><img src="./uber.png" alt="uberlogo"></div>
+            <div><img src="./round.png" alt="roundlogo"></div>
+            <div><img src="./newyork.png" alt="newYorklogo"></div>
+            <div><img src="./etsylogo.png" alt="etsylogo"></div>
+        </div>
+        <div class="vid-section">
+            <video src="./slack video.webm" controls autoplay width="70%" height="50%" class="video" loop></video>
+        </div>
+        <div class="custom">
+            <div class="cust-div"><h1>Your people, projects, apps and AI, all on the world's most beloved work operating system.</h1></div>
+                
+        </div>
+    </main>
+    
+</body>
+</html>
